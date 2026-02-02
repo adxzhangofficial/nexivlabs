@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Our Services | Nexiv Labs - Web Development, AI, Cloud & More</title>
+        <meta name="description" content="Explore Nexiv Labs comprehensive services: Web Development, Mobile Apps, AI Integration, Cloud Solutions, Bug Finding, and Quality Assurance.">
+        <meta name="keywords" content="Web Development, AI Integration, Cloud Solutions, Mobile App Development, Bug Finding, QA Services">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" href="assets/images/logos/loadicon.png">
+        <style>
+            .page-header {
+                padding: 160px 0 80px;
+                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                text-align: center;
+            }
+            .page-header h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #1a1a2e;
+                margin-bottom: 1rem;
+            }
+            .page-header p {
+                font-size: 1.25rem;
+                color: #64748b;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .services-grid {
+                padding: 80px 0;
+                background: #fff;
+            }
+            .service-card {
+                background: #fff;
+                border-radius: 20px;
+                padding: 40px 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+                transition: all 0.3s ease;
+                border: 1px solid #e2e8f0;
+                height: 100%;
+            }
+            .service-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 40px rgba(57, 107, 246, 0.15);
+                border-color: #396bf6;
+            }
+            .service-icon {
+                width: 80px;
+                height: 80px;
+                border-radius: 16px;
+                background: linear-gradient(135deg, #396bf6 0%, #5b8def 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+            .service-icon img {
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+                filter: brightness(0) invert(1);
+            }
+            .service-card h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #1a1a2e;
+                margin-bottom: 16px;
+            }
+            .service-card p {
+                color: #64748b;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            .tech-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+            .tech-tag {
+                background: #f1f5f9;
+                color: #475569;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+            .service-link {
+                color: #396bf6;
+                text-decoration: none;
+                font-weight: 600;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                transition: gap 0.3s ease;
+            }
+            .service-link:hover {
+                gap: 12px;
+            }
+            .why-choose-section {
+                padding: 80px 0;
+                background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+                color: #fff;
+            }
+            .why-choose-section h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            .why-card {
+                text-align: center;
+                padding: 30px;
+            }
+            .why-card .number {
+                font-size: 3rem;
+                font-weight: 700;
+                color: #396bf6;
+                margin-bottom: 16px;
+            }
+            .why-card h4 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+            .why-card p {
+                color: #94a3b8;
+                font-size: 0.95rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ========================================
+             STICKY HEADER (BANNER + NAV)
+             ======================================== -->
+        <header class="sticky-header">
+            <!-- ========================================
+                 TOP BANNER SECTION
+                 ======================================== -->
+            <div class="top-banner">
+                🚀 Nexiv Labs - Your All-in-One Business Startup Solution Partner
+                <span class="close-btn">✕</span>
+            </div>
+
+            <!-- ========================================
+                 NAVIGATION SECTION
+                 ======================================== -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img
+                        src="assets/images/logos/nexiv-labs-211x80.png"
+                        alt="Nexiv Labs"
+                        style="width: 140px; height: 40px; object-fit: contain"
+                    />
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#what-we-do">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#process">Our Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">All Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn btn-demo">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <!-- ========================================
+             PAGE HEADER
+             ======================================== -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions to transform your business ideas into reality. Everything you need, all in one place.</p>
+            </div>
+        </section>
+
+        <!-- ========================================
+             SERVICES GRID
+             ======================================== -->
+        <section class="services-grid">
+            <div class="container">
+                <div class="row">
+                    <!-- Web Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/html500x500.png" alt="Web Development">
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>We create fast, responsive & user-friendly websites for your business. From static HTML sites to dynamic React applications with secure backend solutions.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">ReactJS</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">ASP.NET</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Development -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/andoid500x500.png" alt="Mobile Development">
+                            </div>
+                            <h3>Mobile App Development</h3>
+                            <p>Build powerful mobile applications for iOS and Android platforms. Cross-platform solutions that deliver native-like performance and user experience.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">iOS</span>
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Kotlin</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/ai500x500.png" alt="AI Solutions">
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                            <p>Integrate cutting-edge AI solutions into your business. From intelligent chatbots to predictive analytics and computer vision applications.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">ChatGPT API</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Solutions -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/tensorflow500x500.png" alt="Cloud Solutions">
+                            </div>
+                            <h3>Cloud Solutions</h3>
+                            <p>Deploy and scale your applications with robust cloud infrastructure. We help you migrate, optimize, and manage your cloud environment efficiently.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Google Cloud</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bug Finding & QA -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/python500x500.png" alt="Bug Finding">
+                            </div>
+                            <h3>Bug Finding & QA</h3>
+                            <p>Comprehensive testing and quality assurance services. Identify vulnerabilities, fix bugs, and ensure your software meets the highest standards.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">Jest</span>
+                                <span class="tech-tag">Cypress</span>
+                                <span class="tech-tag">Manual Testing</span>
+                                <span class="tech-tag">Security Audit</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Automation -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <img src="assets/images/services/nodejs500x500.png" alt="DevOps">
+                            </div>
+                            <h3>DevOps & Automation</h3>
+                            <p>Streamline your development workflow with CI/CD pipelines, infrastructure as code, and automated deployment strategies.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">GitLab CI</span>
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">Ansible</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                            </div>
+                            <a href="contact.html" class="service-link">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             WHY CHOOSE US SECTION
+             ======================================== -->
+        <section class="why-choose-section">
+            <div class="container">
+                <h2>Why Choose Nexiv Labs?</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="number">50+</div>
+                            <h4>Projects Delivered</h4>
+                            <p>Successfully completed projects across various industries</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="number">24/7</div>
+                            <h4>Support Available</h4>
+                            <p>Round-the-clock support for all your technical needs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="number">100%</div>
+                            <h4>Client Satisfaction</h4>
+                            <p>We don't stop until you're completely satisfied</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="why-card">
+                            <div class="number">1</div>
+                            <h4>Click Solution</h4>
+                            <p>All services under one roof - no coordination hassles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CTA SECTION
+             ======================================== -->
+        <section class="cta-section" id="cta">
+            <div class="cta-container">
+                <img
+                    src="assets/images/cta-bg.png"
+                    alt="Background"
+                    class="cta-bg"
+                />
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-text">
+                        Let's discuss your requirements and<br />build something amazing together.
+                    </p>
+                    <a href="contact.html" class="cta-btn">Get Free Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             FOOTER SECTION
+             ======================================== -->
+        <footer class="footer-section">
+            <div class="container footer-sec-1">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img
+                                src="assets/images/logos/nexiv-labs-211x80.png"
+                                alt="Nexiv Labs"
+                                style="
+                                    width: 140px;
+                                    height: 40px;
+                                    object-fit: contain;
+                                "
+                            />
+                        </a>
+                        <p class="footer-desc">
+                            Nexiv Labs is your all-in-one business startup
+                            solution provider - web development, AI integrations,
+                            cloud solutions, and more in one click.
+                        </p>
+                    </div>
+                    <div class="footer-links-group">
+                        <div class="footer-links-col">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="services.html">Web Development</a></li>
+                                <li><a href="services.html">AI Integration</a></li>
+                                <li><a href="services.html">Cloud Solutions</a></li>
+                                <li><a href="services.html">Bug Finding & QA</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li>
+                                    <a href="#"
+                                        >Careers
+                                        <span class="hiring-badge"
+                                            >Hiring</span
+                                        ></a
+                                    >
+                                </li>
+                                <li><a href="#">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-left">
+                        © 2026 Nexiv Labs. All rights reserved.
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="compliance-status">
+                            <span class="compliance-dot"></span>
+                            Quality Assured
+                        </div>
+                        <div class="footer-badges">
+                            <img
+                                src="assets/images/iso27001.png"
+                                alt="ISO 27001"
+                                class="footer-badge"
+                            />
+                            <img
+                                src="assets/images/iso42001.png"
+                                alt="ISO 42001"
+                                class="footer-badge"
+                            />
+                            <img
+                                src="assets/images/gdpr.png"
+                                alt="GDPR"
+                                class="footer-badge"
+                            />
+                        </div>
+                        <div class="footer-legal-links">
+                            <a href="#">Terms of Use</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="contact.html">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ========================================
+             SCRIPTS SECTION
+             ======================================== -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Close Top Banner
+            document.addEventListener("DOMContentLoaded", function () {
+                const closeBtn = document.querySelector(".top-banner .close-btn");
+                const topBanner = document.querySelector(".top-banner");
+                
+                if (closeBtn && topBanner) {
+                    closeBtn.addEventListener("click", function () {
+                        topBanner.style.transition = "all 0.3s ease";
+                        topBanner.style.maxHeight = topBanner.offsetHeight + "px";
+                        topBanner.offsetHeight;
+                        topBanner.style.maxHeight = "0";
+                        topBanner.style.padding = "0";
+                        topBanner.style.overflow = "hidden";
+                        topBanner.style.opacity = "0";
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
